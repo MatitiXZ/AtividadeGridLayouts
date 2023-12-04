@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		.container{
+			grid-template-columns: 40vw 40vw;
+			grid-template-rows: 25vh 25vh 25vh;
+			display: grid;
+			column-gap: 50px;
+			row-gap: 50px;
+			margin: 3%;
+			justify-content: center;
+			align-content: center;
+		}
+		.a{
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 1;
+			grid-row-end: 2;
+		}
+		.b{
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 1;
+			grid-row-end: 2;
+		}
+		.c{
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 2;
+			grid-row-end: 4;
+		}
+		.d{
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 2;
+			grid-row-end: 4;
+		}
+		.containerD{
+			margin-top:3%;
+			align-items: center;
+			justify-content: center;
+			display: grid;
+			grid-template-columns: 10vw 10vw;
+			grid-template-rows: 20vh 20vh;
+			grid-template-areas:
+			"e e e e"
+			"f f g g";
+		}
+		.e{
+			color: black;
+			border-radius: 15px;
+			font-size: 50px;
+			line-height: 150px;
+			padding: 2px;
+			margin-bottom: 4vh;
+			height: 20vh;
+			grid-area: e;
+			background-color: gray;
+		}
+		.f{
+			color: black;
+			font-size: 50px;
+			line-height: 150px;
+			padding: 2px;
+			height: 20vh;
+			width: 18vw;
+			grid-area: f;
+			background-color: gray;
+		}
+		.g{
+			color: black;
+			border-radius: 15px;
+			font-size: 50px;
+			line-height: 150px;
+			padding: 2px;
+			height: 20vh;
+			width: 18vw;
+			grid-area: g;
+			background-color: gray;
+		}
+		div{
+			background-color: black;
+			color: white;
+			border-radius: 15px;
+			font-size: 50px;
+			line-height: 120px;
+			padding: 30px;
+		}
+	</style>
+</head>
+<body class="container">
+	<div class="a">A</div>
+	<div class="b">B</div>
+	<div class="c">C</div>
+	<div class="d">
+		<div class="containerD">
+			<div class="e">E</div>
+			<div class="f">F</div>
+			<div class="g">G</div>
+		</div>
+	</div>
+</body>
+</html>
